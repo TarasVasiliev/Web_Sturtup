@@ -1,6 +1,11 @@
 *{
-    font-family: "Raleway" sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 15px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 a:hover{
     text-decoration: none;
@@ -486,4 +491,70 @@ button:focus{
 .carousel__prev{
     left: 0;
     z-index: 1;
+}
+.footer {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.footer__container {
+    width: 100%;
+    max-width: none;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    
+}
+
+.footer__column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer__column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__column ul li {
+    margin-bottom: 8px;
+}
+
+.footer__column ul li a {
+    color: #04072c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer__column ul li a:hover {
+    color: #f39c12;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer__socials a {
+    display: inline-block;
+    color: #04072c;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer__socials a:hover {
+    color: #f39c12;
 }
