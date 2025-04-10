@@ -558,3 +558,170 @@ button:focus{
 .footer__socials a:hover {
     color: #f39c12;
 }
+/* Для мобільних пристроїв */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .descr {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .promo__content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .promo__title {
+        font-size: 40px;
+    }
+
+    .promo_btn {
+        width: 140px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .useful_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .useful__item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .about__wrap {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about__image, .about__content {
+        flex: none;
+        width: 100%;
+    }
+
+    .featured-works__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .how-we-work__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-we-work__text {
+        max-width: 100%;
+    }
+
+    .how-we-work__image {
+        max-width: 100%;
+    }
+
+    .team__content {
+        margin-top: 40px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .footer__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer__socials {
+        flex-direction: column;
+    }
+}
+
+/* Для планшетів */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .promo__content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .promo__title {
+        font-size: 60px;
+    }
+
+    .promo_btn {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .useful_content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .useful__item {
+        width: 30%;
+    }
+
+    .about__wrap {
+        flex-direction: row;
+    }
+
+    .featured-works__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Для великих екранів */
+@media (min-width: 1025px) {
+    .container {
+        padding: 0 80px;
+    }
+
+    .promo__content {
+        flex-direction: row;
+    }
+
+    .promo__text {
+        width: 60%;
+    }
+
+    .useful_content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .useful__item {
+        width: 27%;
+    }
+}
